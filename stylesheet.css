@@ -57,34 +57,16 @@ p {
 .firstContent h1 {
 	font-family: 'tacoFont', Calibri, sans-serif;
 	color: #b0cd00;
-	background-color: #f5e97f;
 	font-size: 72px;
 	font-weight: bold;
-	border-style: solid;
-	border-width: 10px;
-	border-color: #fff;
-	border-radius: 10px;
-}
-
-.firstContent p {
-	font-family:Calibri, sans-serif;
-	color: #ffffff;
-	font-size: 30px;
-	margin-bottom: 0px;
-	margin-top: 0px;
 }
 
 .firstContent h3 {
 	margin: auto;
-	color: #b0cd00;
-	background-color: #f5e97f;
+	text-align: left;
+	color: #fff;
 	font-family: Calibri, sans-serif;
-	border-style: solid;
-	border-width: 6px;
-	border-color: #fff;
-	border-radius: 6px;
-	width: 40%;
-
+	text-align: center;
 }
 
 #tacoTitle {
