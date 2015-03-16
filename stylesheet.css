@@ -114,6 +114,27 @@ p {
 	font-size: 2em;
 }
 
+.recipeSection {
+	background-color: #f7c133;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.recipeSection .container {
+	margin-top: 150px;
+	margin-bottom: 250px;
+}
+
+.recipeSection .thumbs {
+	padding-top: 10px;
+}
+
+.recipeSection h1 {
+
+}
+
 .recipeGallery {
 	background-color: #f7c133;
 	color: #fff;
