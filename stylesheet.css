@@ -1,0 +1,154 @@
+@font-face {
+	font-family: 'tacoFont';
+	src: url('src/font/Timoteo.eot');
+	src: url('src/font/Timoteo.woff') format('woff'), url('src/font/Timoteo.ttf') format('truetype'), url('src/font/Timoteo.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+	font-family:Calibri, sans-serif;
+}
+
+p {
+	font-family:Calibri, sans-serif;
+}
+
+.banner {
+	background-color: #b0cd00;
+}
+
+.banner .container {
+	padding-top:20px;
+}
+
+.banner li {
+	display: inline;
+}
+
+.banner a {
+	padding-left: 20px;
+	padding-right: 20px;
+	color: #ffffff;
+}
+
+#firstContentIcon {
+	width: 250px;
+	height: 250px;
+}
+
+.firstContent {
+	background-image: url("src/img/tacosBanner.png");
+	height: 800px;
+}
+
+.firstContent a {
+	color: red;
+	text-decoration: none;
+}
+
+.firstContent .container {
+	position: relative;
+	margin: auto;
+	text-align: center;
+	top: 150px;
+}
+
+.firstContent h1 {
+	font-family: 'tacoFont', Calibri, sans-serif;
+	color: #b0cd00;
+	background-color: #f5e97f;
+	font-size: 72px;
+	font-weight: bold;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #fff;
+	border-radius: 10px;
+}
+
+.firstContent p {
+	font-family:Calibri, sans-serif;
+	color: #ffffff;
+	font-size: 30px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.firstContent h3 {
+	margin: auto;
+	color: red;
+	background-color: #f5e97f;
+	font-family: Calibri, sans-serif;
+	border-style: solid;
+	border-width: 10px;
+	border-color: #fff;
+	border-radius: 10px;
+	width: 40%;
+
+}
+
+#tacoTitle {
+	color: red;
+}
+
+.infoGraphic {
+	background-color: #bb5b33;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	text-align: center;
+}
+
+.infoGraphic .container {
+	margin-bottom: 250px;
+	margin-top: 250px;
+}
+
+#tortillasConsumed {
+	color: #f7c133;
+	font-size: 10em;
+}
+
+#seconds {
+	color: #f7c133;
+	font-size: 2em;
+}
+
+.recipeGallery {
+	background-color: #f7c133;
+	color: #fff;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.recipeGallery h3 {
+	font-family: 'tacoFont', Calibri, sans-serif;
+	color: #fff;
+	font-size: 72px;
+	font-weight: bold;
+}
+
+.recipeGallery p {
+	font-family: Calibri, sans-serif;
+	color: #fff;
+	font-size: 20px;
+	padding-bottom: 20px;
+}
+
+.recipeGallery .container {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+.recipeGallery .thumbnail {
+	margin-top: 30px;
+}
+
+.info {
+	background-color: #b0cd00;
+	color: #fff;
+}
+
+.info a {
+	color: #fff;
+}
