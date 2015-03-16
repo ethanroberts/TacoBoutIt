@@ -76,13 +76,13 @@ p {
 
 .firstContent h3 {
 	margin: auto;
-	color: red;
+	color: #b0cd00;
 	background-color: #f5e97f;
 	font-family: Calibri, sans-serif;
 	border-style: solid;
-	border-width: 10px;
+	border-width: 6px;
 	border-color: #fff;
-	border-radius: 10px;
+	border-radius: 6px;
 	width: 40%;
 
 }
