@@ -76,11 +76,12 @@ p {
 }
 
 .infoGraphic {
-	background-color: #bb5b33;
+	background-color: #5b4e40;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
+	box-shadow: inset 0px 8px 50px #333333;
 }
 
 .infoGraphic .container {
