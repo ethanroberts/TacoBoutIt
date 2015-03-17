@@ -24,7 +24,7 @@ p {
 }
 
 .banner {
-	background-color: #b0cd00;
+	background-color: #105B63;
 }
 
 .banner .container {
@@ -97,8 +97,18 @@ p {
 	margin-bottom: 150px;
 }
 
+.introduction .thumbnail {
+	background: none;
+	border: none;
+}
+
 .introduction h1 {
 	font-family: 'tacoFont', Calibri, sans-serif;
+	font-size: 3em;
+}
+
+.introduction p {
+	font-size: 1em;
 }
 
 .infoGraphic {
