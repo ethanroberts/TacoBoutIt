@@ -3,8 +3,26 @@
 	var numOfSeconds = document.getElementById ("seconds");
 	var seconds = 0, tortillas = 0, step = 2695;
 
+function setupEventHandles () {
+	//Scroll Buttons
+	document.getElementById("c1").addEventListener("click", scrollC1);
+	document.getElementById("c2").addEventListener("click", scrollC2);
+	document.getElementById("c3").addEventListener("click", scrollC3);
+}
+
 function startCount () { //start tortilla counter
 	var tortillaCounter = setInterval(animTortillas, 1000);
+}
+
+//Scroll Animations
+function scrollC1 () {
+	$("html, body").animate({ scrollTop: $('#intro').offset().top }, 1000);
+}
+function scrollC2 () {
+	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
+}
+function scrollC3 () {
+	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
 
 function animTortillas () {
@@ -27,5 +45,6 @@ function animTortillas () {
 }
 
 window.onload = function () {
+	setupEventHandles();
 	startCount();
 }
