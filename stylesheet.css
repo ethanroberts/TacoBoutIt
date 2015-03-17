@@ -1,3 +1,12 @@
+/*
+Colours
+Green-Blue: #105B63;
+Off-White: #FFFAD5;
+Light Yellow: #FFD34E;
+Orange: #DB9E36;
+Red: #BD4932;
+*/
+
 @font-face {
 	font-family: 'tacoFont';
 	src: url('src/font/Timoteo.eot');
@@ -75,8 +84,25 @@ p {
 	color: red;
 }
 
+.introduction {
+	background-color: #BD4932;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 8px 50px #333333;
+}
+
+.introduction .container {
+	margin-top: 150px;
+	margin-bottom: 150px;
+}
+
+.introduction h1 {
+	font-family: 'tacoFont', Calibri, sans-serif;
+}
+
 .infoGraphic {
-	background-color: #5b4e40;
+	background-color: #105B63;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -100,11 +126,12 @@ p {
 }
 
 .recipeSection {
-	background-color: #f7c133;
+	background-color: #FFD34E;
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
 	text-align: center;
+	box-shadow: inset 0px 8px 50px #333333;
 }
 
 .recipeSection .container {
@@ -117,7 +144,7 @@ p {
 }
 
 .recipeSection h1 {
-
+	font-family: 'tacoFont', Calibri, sans-serif;
 }
 
 .recipeGallery {
