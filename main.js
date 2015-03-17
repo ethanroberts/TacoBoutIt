@@ -5,9 +5,15 @@
 
 function setupEventHandles () {
 	//Scroll Buttons
-	document.getElementById("c1").addEventListener("click", scrollC1);
-	document.getElementById("c2").addEventListener("click", scrollC2);
-	document.getElementById("c3").addEventListener("click", scrollC3);
+		//Down
+	document.getElementById("cd1").addEventListener("click", scrollCD1);
+	document.getElementById("cd2").addEventListener("click", scrollCD2);
+	document.getElementById("cd3").addEventListener("click", scrollCD3);
+		//Up
+	document.getElementById("cu1").addEventListener("click", scrollCU1);
+	document.getElementById("cu2").addEventListener("click", scrollCU2);
+	document.getElementById("cu3").addEventListener("click", scrollCU3);
+
 }
 
 function startCount () { //start tortilla counter
@@ -15,15 +21,27 @@ function startCount () { //start tortilla counter
 }
 
 //Scroll Animations
-function scrollC1 () {
+	//Down
+function scrollCD1 () {
 	$("html, body").animate({ scrollTop: $('#intro').offset().top }, 1000);
 }
-function scrollC2 () {
+function scrollCD2 () {
 	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
 }
-function scrollC3 () {
+function scrollCD3 () {
 	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
+	//Up
+function scrollCU1 () {
+	$("html, body").animate({ scrollTop: $('#bannerTop').offset().top }, 1000);
+}
+function scrollCU2 () {
+	$("html, body").animate({ scrollTop: $('#intro').offset().top }, 1000);
+}
+function scrollCU3 () {
+	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
+}
+
 
 function animTortillas () {
 	//check innerHTML of numOfTortillas
