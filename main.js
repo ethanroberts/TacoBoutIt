@@ -1,7 +1,13 @@
+	//Mexican Dude in Introduction
+	var mexicanDude = document.getElementById("mexicanDude");
+	var MDsrc1 = "src/img/mexicanDude1.png";
+	var MDsrc2 = "src/img/mexicanDude2.png";
+	var MDframe = 1;
 
-	var numOfTortillas = document.getElementById ("tortillasConsumed");
-	var numOfSeconds = document.getElementById ("seconds");
-	var seconds = 0, tortillas = 0, step = 2695;
+	//For tortilla Counter
+	var numOfTortillas = document.getElementById("tortillasConsumed");
+	var numOfSeconds = document.getElementById("seconds");
+	var seconds = 0, tortillas = 0, step = 2695; 
 
 function setupEventHandles () {
 	//Scroll Buttons
@@ -14,9 +20,38 @@ function setupEventHandles () {
 	document.getElementById("cu2").addEventListener("click", scrollCU2);
 	document.getElementById("cu3").addEventListener("click", scrollCU3);
 
+	//on Window Scroll
+	$(window).scroll(animateMexicanDude);
 }
 
-function startCount () { //start tortilla counter
+
+//Animate the Mexican Dude in introduction
+function animateMexicanDude () {
+	console.log("Scroll Occured");
+	//console.log(mexicanDude.src);
+
+	if (MDframe === 1) {
+		mexicanDude.src = MDsrc2;
+	} else {
+		mexicanDude.src = MDsrc1;
+	}
+
+	MDframe = MDframe * -1;
+	console.log("Frame: " + MDframe);
+
+	/*
+	if (mexicanDude.src == "src/img/mexicanDude1.png") {
+		mexicanDude.attr("src", "src/img/mexicanDude2.png");
+		//console.log("Pic 2");
+	} else {
+		mexicanDude.src = "src/img/mexicanDude1.png";
+		//console.log("Pic 1");
+	}
+	*/
+}
+
+//Start tortilla counter
+function startCount () {
 	var tortillaCounter = setInterval(animTortillas, 1000);
 }
 
@@ -43,6 +78,8 @@ function scrollCU3 () {
 }
 
 
+
+//Animate tortilla counter
 function animTortillas () {
 	//check innerHTML of numOfTortillas
 		//console.log("# of Tortillas " + numOfTortillas.innerHTML);

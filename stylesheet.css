@@ -205,6 +205,11 @@ p {
 	margin-top: 30px;
 }
 
+#mexicanDude {
+	width: 200px;
+	height: 300px;
+}
+
 .info {
 	background-color: #b0cd00;
 	color: #fff;
