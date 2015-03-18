@@ -25,7 +25,7 @@ function setupEventHandles () {
 
 	//Phone Shake
 	//$("#intro").shake();
-	$(window).on('shake', phoneShake);
+	$(window).bind('shake', phoneShake);
 }
 
 function phoneShake () {
