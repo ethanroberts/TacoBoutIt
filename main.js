@@ -24,9 +24,10 @@ function setupEventHandles () {
 	$(window).scroll(animateMexicanDude);
 }
 
-function phoneShake () {
-	$("#maracaAudio").play();
-}
+
+//function phoneShake () {
+//	$("#maracaAudio").play();
+//}
 
 
 //Animate the Mexican Dude in introduction
@@ -97,7 +98,20 @@ window.onload = function () {
 	setupEventHandles();
 	startCount();
 
+	//var mAudio = document.getElementById("maracaAudio");
+		//mAudio.play();
+
 	//Phone Shake
 	//$("#intro").shake();
-	jQuery(window).bind('shake', phoneShake);
+	//jQuery(window).bind('shake', phoneShake);
 }
+
+
+
+
+
+
+
+
+
+
