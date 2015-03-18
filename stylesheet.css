@@ -63,7 +63,8 @@ p {
 }
 
 .firstContent {
-	background-image: url("src/img/tacosBanner.png");
+	/* background-image: url("src/img/tacosBanner.png"); */
+	background-color: #FFFAD5;
 	height: 800px;
 }
 
@@ -176,13 +177,20 @@ p {
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	text-align: center;
 	box-shadow: inset 0px 8px 50px #333333;
 	min-height: 100vh;
 }
 .recipeSection .container {
 	padding-top: 30vh;
 	padding-bottom: 30vh;
+}
+
+#tacoVideo {
+
+}
+
+#videoDescription {
+	margin: auto;
 }
 
 
