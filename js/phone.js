@@ -8,7 +8,7 @@ var mAudio = document.getElementById("maracaAudio");
 
 
 
-var sense = sense.init();
+var sense = sense.init({debug: true});
 
 sense.flick(function(data){
 	//Play the maracas please!
