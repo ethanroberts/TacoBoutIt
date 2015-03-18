@@ -186,10 +186,17 @@ p {
 }
 
 #tacoVideo {
+	display: block;
+	margin: auto;
+	text-align: center;
+}
 
+#tVid {
+	box-shadow: 10px 10px 20px #333333;
 }
 
 #videoDescription {
+	display: block;
 	margin: auto;
 }
 
