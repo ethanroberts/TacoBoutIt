@@ -27,7 +27,7 @@ function setupEventHandles () {
 
 //Animate the Mexican Dude in introduction
 function animateMexicanDude () {
-	console.log("Scroll Occured");
+	//console.log("Scroll Occured");
 	//console.log(mexicanDude.src);
 
 	if (MDframe === 1) {
@@ -37,17 +37,7 @@ function animateMexicanDude () {
 	}
 
 	MDframe = MDframe * -1;
-	console.log("Frame: " + MDframe);
-
-	/*
-	if (mexicanDude.src == "src/img/mexicanDude1.png") {
-		mexicanDude.attr("src", "src/img/mexicanDude2.png");
-		//console.log("Pic 2");
-	} else {
-		mexicanDude.src = "src/img/mexicanDude1.png";
-		//console.log("Pic 1");
-	}
-	*/
+	//console.log("Frame: " + MDframe);
 }
 
 //Start tortilla counter

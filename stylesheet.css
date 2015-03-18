@@ -125,7 +125,7 @@ p {
 }
 
 .introduction p {
-	font-size: 1em;
+	font-size: 2em;
 }
 
 .infoGraphic {
@@ -206,8 +206,8 @@ p {
 }
 
 #mexicanDude {
-	width: 200px;
-	height: 300px;
+	width: 300px;
+	height: 400px;
 }
 
 .info {
