@@ -15,4 +15,4 @@ sense.flick(function(data){
 	mAudio.play();
 });
 
-sense.addTiltScroll();
+//sense.addTiltScroll();

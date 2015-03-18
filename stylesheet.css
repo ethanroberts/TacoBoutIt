@@ -153,6 +153,24 @@ p {
 	font-size: 2em;
 }
 
+.fact1 {
+	background-color: #DB9E36;
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 8px 50px #333333;
+	min-height: 100vh;
+}
+
+.fact1 .container {
+	padding-top: 20vh;
+	padding-bottom: 20vh;
+}
+
+.fact1 p {
+	font-size: 2em;
+}
+
 .recipeSection {
 	background-color: #FFD34E;
 	color: #fff;
@@ -213,10 +231,22 @@ p {
 #mexicanDude {
 	width: 300px;
 	height: 400px;
+	display: block;
+	margin: auto;
 }
 
 .footnote p {
 	font-size: 1em;
+}
+
+.logoDoritos {
+	text-align: center;
+	display: block;
+}
+
+#dLogo {
+	width: 428px;
+	height: 402px;
 }
 
 .info {

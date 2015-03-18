@@ -9,19 +9,43 @@
 	var numOfSeconds = document.getElementById("seconds");
 	var seconds = 0, tortillas = 0, step = 2695; 
 
+	//Audio
+	var mAudio = document.getElementById("maracaAudio");
+
+	//Dorito Animation
+	var doritoLogo = document.getElementById("dLogo");
+	var doritoFrames = ["src/img/doritos01.png", "src/img/doritos02.png", "src/img/doritos03.png",
+	"src/img/doritos04.png", "src/img/doritos05.png", "src/img/doritos06.png", "src/img/doritos07.png",
+	"src/img/doritos08.png", "src/img/doritos09.png", "src/img/doritos10.png", "src/img/doritos11.png",
+	"src/img/doritos12.png", "src/img/doritos13.png", "src/img/doritos14.png", "src/img/doritos15.png"];
+	var dCurrentFrame = 0;
+
+	//Sense.js
+	var sense = sense.init({debug: true});
+
+	sense.flick(function(data){
+		//Play the maracas please!
+		mAudio.play();
+	});
+
 function setupEventHandles () {
 	//Scroll Buttons
 		//Down
 	document.getElementById("cd1").addEventListener("click", scrollCD1);
 	document.getElementById("cd2").addEventListener("click", scrollCD2);
 	document.getElementById("cd3").addEventListener("click", scrollCD3);
+	document.getElementById("cd4").addEventListener("click", scrollCD4);
 		//Up
 	document.getElementById("cu1").addEventListener("click", scrollCU1);
 	document.getElementById("cu2").addEventListener("click", scrollCU2);
 	document.getElementById("cu3").addEventListener("click", scrollCU3);
+	document.getElementById("cu4").addEventListener("click", scrollCU4);
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
+
+	//Test
+	doritoLogo.addEventListener("click", startDAnim);
 }
 
 
@@ -50,6 +74,19 @@ function startCount () {
 	var tortillaCounter = setInterval(animTortillas, 1000);
 }
 
+//Animate Doritos Logo
+function startDAnim () {
+	setInterval(animateDLogo, 50);
+}
+
+//Animate Doritos Logo
+function animateDLogo () {
+	if(dCurrentFrame < doritoFrames.length) {
+		dLogo.src = doritoFrames[dCurrentFrame];
+		dCurrentFrame++;
+	}
+}
+
 //Scroll Animations
 	//Down
 function scrollCD1 () {
@@ -59,6 +96,9 @@ function scrollCD2 () {
 	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
 }
 function scrollCD3 () {
+	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
+}
+function scrollCD4 () {
 	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
 	//Up
@@ -71,7 +111,9 @@ function scrollCU2 () {
 function scrollCU3 () {
 	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
 }
-
+function scrollCU4 () {
+	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
+}
 
 
 //Animate tortilla counter
