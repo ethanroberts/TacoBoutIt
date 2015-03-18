@@ -22,10 +22,6 @@ function setupEventHandles () {
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
-
-	//Phone Shake
-	//$("#intro").shake();
-	jQuery(window).bind('shake', phoneShake);
 }
 
 function phoneShake () {
@@ -100,4 +96,8 @@ function animTortillas () {
 window.onload = function () {
 	setupEventHandles();
 	startCount();
+
+	//Phone Shake
+	//$("#intro").shake();
+	jQuery(window).bind('shake', phoneShake);
 }
