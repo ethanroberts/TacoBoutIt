@@ -14,3 +14,5 @@ sense.flick(function(data){
 	//Play the maracas please!
 	mAudio.play();
 });
+
+sense.addTiltScroll();
