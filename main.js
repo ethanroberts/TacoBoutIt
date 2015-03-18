@@ -22,6 +22,14 @@ function setupEventHandles () {
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
+
+	//Phone Shake
+	//$("#intro").shake();
+	$(window).on('shake', phoneShake);
+}
+
+function phoneShake () {
+	$("#maracaAudio").play();
 }
 
 
