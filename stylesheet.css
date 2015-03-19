@@ -214,33 +214,18 @@ p {
 	font-size: 2em;
 }
 
-.recipeGallery {
-	background-color: #f7c133;
+.jokes {
+	background-color: #BD4932;
 	color: #fff;
-	padding-top: 20px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 8px 50px #333333;
+	min-height: 100vh;
 }
 
-.recipeGallery h3 {
-	font-family: 'tacoFont', Calibri, sans-serif;
-	color: #fff;
-	font-size: 72px;
-	font-weight: bold;
-}
-
-.recipeGallery p {
-	font-family: Calibri, sans-serif;
-	color: #fff;
-	font-size: 20px;
-	padding-bottom: 20px;
-}
-
-.recipeGallery .container {
-	margin-top: 25px;
-	margin-bottom: 25px;
-}
-
-.recipeGallery .thumbnail {
-	margin-top: 30px;
+.jokes .container {
+	padding-top: 20vh;
+	padding-bottom: 20vh;
 }
 
 #mexicanDude {

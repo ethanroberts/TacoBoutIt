@@ -1,3 +1,4 @@
+	
 	//Mexican Dude in Introduction
 	var mexicanDude = document.getElementById("mexicanDude");
 	var MDsrc1 = "src/img/mexicanDude1.png";
@@ -21,7 +22,7 @@
 	var dCurrentFrame = 0;
 
 	//Sense.js
-	var sense = sense.init({debug: true});
+	var sense = sense.init();
 
 	sense.flick(function(data){
 		//Play the maracas please!
@@ -30,16 +31,18 @@
 
 function setupEventHandles () {
 	//Scroll Buttons
-		//Down
+	//Down
 	document.getElementById("cd1").addEventListener("click", scrollCD1);
 	document.getElementById("cd2").addEventListener("click", scrollCD2);
 	document.getElementById("cd3").addEventListener("click", scrollCD3);
 	document.getElementById("cd4").addEventListener("click", scrollCD4);
-		//Up
+	document.getElementById("cd5").addEventListener("click", scrollCD5);
+	//Up
 	document.getElementById("cu1").addEventListener("click", scrollCU1);
 	document.getElementById("cu2").addEventListener("click", scrollCU2);
 	document.getElementById("cu3").addEventListener("click", scrollCU3);
 	document.getElementById("cu4").addEventListener("click", scrollCU4);
+	document.getElementById("cu5").addEventListener("click", scrollCU5);
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
@@ -47,12 +50,6 @@ function setupEventHandles () {
 	//Test
 	doritoLogo.addEventListener("click", startDAnim);
 }
-
-
-//function phoneShake () {
-//	$("#maracaAudio").play();
-//}
-
 
 //Animate the Mexican Dude in introduction
 function animateMexicanDude () {
@@ -101,6 +98,9 @@ function scrollCD3 () {
 function scrollCD4 () {
 	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
+function scrollCD5 () {
+	$("html, body").animate({ scrollTop: $('#jokes').offset().top }, 1000);
+}
 	//Up
 function scrollCU1 () {
 	$("html, body").animate({ scrollTop: $('#bannerTop').offset().top }, 1000);
@@ -113,6 +113,9 @@ function scrollCU3 () {
 }
 function scrollCU4 () {
 	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
+}
+function scrollCU5 () {
+	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
 
 
