@@ -291,8 +291,12 @@ p {
 }
 
 .info {
-	background-color: #b0cd00;
+	background-color: #BD4932; /* #BD4932 */
 	color: #fff;
+}
+
+.info .container {
+	padding-bottom: 50px;
 }
 
 .info a {
