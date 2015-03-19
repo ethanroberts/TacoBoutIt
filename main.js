@@ -42,7 +42,7 @@ function setupEventHandles () {
 	document.getElementById("cu2").addEventListener("click", scrollCU2);
 	document.getElementById("cu3").addEventListener("click", scrollCU3);
 	document.getElementById("cu4").addEventListener("click", scrollCU4);
-	document.getElementById("cu5").addEventListener("click", scrollCU5);
+	//document.getElementById("cu5").addEventListener("click", scrollCU5);
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
@@ -88,9 +88,11 @@ function animateDLogo () {
 	//Down
 function scrollCD1 () {
 	$("html, body").animate({ scrollTop: $('#intro').offset().top }, 1000);
+	mAudio.play();
 }
 function scrollCD2 () {
 	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);
+	mAudio.play();
 }
 function scrollCD3 () {
 	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
@@ -104,9 +106,11 @@ function scrollCD5 () {
 	//Up
 function scrollCU1 () {
 	$("html, body").animate({ scrollTop: $('#bannerTop').offset().top }, 1000);
+	mAudio.play();
 }
 function scrollCU2 () {
 	$("html, body").animate({ scrollTop: $('#intro').offset().top }, 1000);
+	mAudio.play();
 }
 function scrollCU3 () {
 	$("html, body").animate({ scrollTop: $('#graph1').offset().top }, 1000);

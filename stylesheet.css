@@ -102,7 +102,7 @@ p {
 }
 
 .introduction {
-	background-color: #BD4932;
+	background-color: #BD4932; /* #BD4932 */
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -130,7 +130,7 @@ p {
 }
 
 .infoGraphic {
-	background-color: #105B63;
+	background-color: #105B63; /* #105B63 */
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -155,7 +155,7 @@ p {
 }
 
 .fact1 {
-	background-color: #DB9E36;
+	background-color: #DB9E36; /* #DB9E36 */
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -173,7 +173,7 @@ p {
 }
 
 .recipeSection {
-	background-color: #FFD34E;
+	background-color: #FFD34E; /* #FFD34E */
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -215,7 +215,7 @@ p {
 }
 
 .jokes {
-	background-color: #BD4932;
+	background-color: #BD4932; /* #BD4932 */
 	color: #fff;
 	padding-top: 25px;
 	padding-bottom: 25px;
@@ -227,6 +227,15 @@ p {
 	padding-top: 20vh;
 	padding-bottom: 20vh;
 }
+
+.jokeBox {
+	text-align: center;
+	font-family: Calibri, sans-serif;
+}
+
+.jokeBox h1 {font-size: 5em;}
+
+.jokeBox p {font-size: 2em;}
 
 #mexicanDude {
 	width: 300px;
