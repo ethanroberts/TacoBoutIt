@@ -1,4 +1,8 @@
-	
+	//Ethan Roberts
+	//MDDN 352
+	//Project 1
+	//URL: ethanroberts.github.io/TacoBoutIt
+
 	//Mexican Dude in Introduction
 	var mexicanDude = document.getElementById("mexicanDude");
 	var MDsrc1 = "src/img/mexicanDude1.png";
