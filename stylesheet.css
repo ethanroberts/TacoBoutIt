@@ -1,308 +1,76 @@
-/*
-Colours
-Green-Blue: #105B63;
-Off-White: #FFFAD5;
-Light Yellow: #FFD34E;
-Orange: #DB9E36;
-Red: #BD4932;
-*/
+/* Colours; Green-Blue: #105B63; Off-White: #FFFAD5; Light Yellow: #FFD34E; Orange: #DB9E36; Red: #BD4932; */
 
+/* Font retrived from http://www.dafont.com/timotheos.font */
 @font-face {
 	font-family: 'tacoFont';
 	src: url('src/font/Timoteo.eot');
-	src: url('src/font/Timoteo.woff') format('woff'), url('src/font/Timoteo.ttf') format('truetype'), url('src/font/Timoteo.svg') format('svg');
+	src: url('src/font/Timoteo.woff') format('woff'),
+		 url('src/font/Timoteo.ttf') format('truetype'),
+		 url('src/font/Timoteo.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
-body {
-	font-family:Calibri, sans-serif;
-}
+/* Standard Font Settings */
+body {font-family:Calibri, sans-serif;}
+a {color: #fff;}
+h1 {font-size: 3em;}
+p {font-family:Calibri, sans-serif; font-size: 2em;}
 
-p {
-	font-family:Calibri, sans-serif;
-}
+/* Custom Font Settings */
+.tacoH1 {font-family: 'tacoFont', Calibri, sans-serif;}
+.footnote {font-size: 1em;}
 
-.banner {
-	background-color: #105B63;
-}
+/* Tile (Automatically fills height and width of browser window. For isolating content) */
+.tile {color: #fff; min-height: 100vh; padding-top: 25px; padding-bottom: 25px; box-shadow: inset 0px 8px 50px #333333;}
 
-.banner .container {
-	padding-top:20px;
-}
+/* Set on a div .thumbnail to remove background and border settings */
+.borderless {background: none; border: none;}
 
-.banner li {
-	display: inline;
-}
+/* Container (Placed within another div, useful for moving content around but keeping it within boundaries) */
+.container {padding-top: 30vh; padding-bottom: 30vh;}
 
-.banner a {
-	padding-left: 20px;
-	padding-right: 20px;
-	color: #ffffff;
-}
+/* Carets for navigating between tiles */
+.caret {display: block; margin: auto; width: 50px; height: 50px; border: none;}
+.caretDown {padding-top: 10px;}
+.caretUp {padding-bottom: 10px;}
 
-.caretDown {
-	display: block;
-	margin: auto;
-	width: 50px;
-	height: 50px;
-	padding-top: 10px;
-}
+/* Navbar Styling */
+#navbar {background-color: #105B63;}
+.navLi {display: inline;}
+.navContainer {padding-top: 20px; padding-bottom: 40px;}
+.navA {padding-left: 20px; padding-right: 20px; color: #ffffff;}
 
-.caretUp {
-	display: block;
-	margin: auto;
-	width: 50px;
-	height: 50px;
-	padding-bottom: 10px;
-}
+#tacoImage {width: 250px; height: 250px;}
 
-#firstContentIcon {
-	width: 250px;
-	height: 250px;
-}
+/* Banner Styling */
+#banner {background-color: #FFFAD5; height: 800px;}
+#banner .container {position: relative; margin: auto; text-align: center; top: 100px; padding: 0px;}
+#banner h1 {font-family: 'tacoFont', Calibri, sans-serif; color: #b0cd00; font-size: 72px; font-weight: bold; text-shadow: 2px 2px 10px #333333;}
+#banner h3 {margin: auto; text-align: left; color: #fff; font-family: Calibri, sans-serif; text-align: center; text-shadow: 2px 2px 10px #333333;}
+#tacoTitle {color: red;}
 
-.firstContent {
-	/* background-image: url("src/img/tacosBanner.png"); */
-	background-color: #FFFAD5;
-	height: 800px;
-}
+/* Introduction Tiles Styling */
+#intro {background-color: #BD4932;}
+#mexicanDude {width: 300px; height: 400px; display: block; margin: auto;}
 
-.firstContent a {
-	color: red;
-	text-decoration: none;
-}
+/* Tortilla Counter Tile Styling */
+#graph1 {background-color: #105B63; text-align: center;}
+#tortillasConsumed {color: #f7c133; font-size: 10em;}
+#seconds {color: #f7c133; font-size: 2em;}
 
-.firstContent .container {
-	position: relative;
-	margin: auto;
-	text-align: center;
-	top: 150px;
-}
+/* Fact One Tile Styling */
+#f1 {background-color: #DB9E36;}
+#dLogo {width: 428px; height: 402px; display: block; margin: auto;}
 
-.firstContent h1 {
-	font-family: 'tacoFont', Calibri, sans-serif;
-	color: #b0cd00;
-	font-size: 72px;
-	font-weight: bold;
-	text-shadow: 2px 2px 10px #333333;
-}
+/* Recipe Video Tile Styling */
+#recipeVid {background-color: #FFD34E;}
+#tVid {box-shadow: 10px 10px 20px #333333; display: block; margin: auto;}
+#videoDescription {display: block; margin: auto;}
 
-.firstContent h3 {
-	margin: auto;
-	text-align: left;
-	color: #fff;
-	font-family: Calibri, sans-serif;
-	text-align: center;
-	text-shadow: 2px 2px 10px #333333;
-}
+/* Fact Two Tile Styling */
+#f2 {background-color: #BD4932;}
 
-#tacoTitle {
-	color: red;
-}
+#f3 {background-color: #105B63;}
 
-.introduction {
-	background-color: #BD4932; /* #BD4932 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-.introduction .container {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
-}
-
-.introduction .thumbnail {
-	background: none;
-	border: none;
-}
-
-.introduction h1 {
-	font-family: 'tacoFont', Calibri, sans-serif;
-	font-size: 3em;
-}
-
-.introduction p {
-	font-size: 2em;
-}
-
-.infoGraphic {
-	background-color: #105B63; /* #105B63 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	text-align: center;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-.infoGraphic .container {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
-}
-
-#tortillasConsumed {
-	color: #f7c133;
-	font-size: 10em;
-}
-
-#seconds {
-	color: #f7c133;
-	font-size: 2em;
-}
-
-.fact1 {
-	background-color: #DB9E36; /* #DB9E36 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-.fact1 .container {
-	padding-top: 20vh;
-	padding-bottom: 20vh;
-}
-
-.fact1 p {
-	font-size: 2em;
-}
-
-.recipeSection {
-	background-color: #FFD34E; /* #FFD34E */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-.recipeSection .container {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
-}
-
-#tacoVideo {
-	display: block;
-	margin: auto;
-	text-align: center;
-}
-
-#tVid {
-	box-shadow: 10px 10px 20px #333333;
-}
-
-#videoDescription {
-	display: block;
-	margin: auto;
-}
-
-
-.recipeSection .thumbs {
-	padding-top: 10px;
-}
-
-.recipeSection h1 {
-	font-family: 'tacoFont', Calibri, sans-serif;
-	font-size: 3em;
-}
-
-.recipeSection p {
-	font-size: 2em;
-}
-
-.jokes {
-	background-color: #BD4932; /* #BD4932 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-.jokes .container {
-	padding-top: 20vh;
-	padding-bottom: 20vh;
-}
-
-.jokeBox {
-	text-align: center;
-	font-family: Calibri, sans-serif;
-}
-
-.jokeBox h1 {font-size: 5em;}
-
-.jokeBox p {font-size: 2em;}
-
-#mexicanDude {
-	width: 300px;
-	height: 400px;
-	display: block;
-	margin: auto;
-}
-
-.logoDoritos {
-	text-align: center;
-	display: block;
-}
-
-#dLogo {
-	width: 428px;
-	height: 402px;
-}
-
-#f2 {
-	background-color: #BD4932; /* #BD4932 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-#f2 .container {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
-}
-
-#f2 h1 {
-	font-size: 3em;
-}
-
-#f3 {
-	background-color: #105B63; /* #105B63 */
-	color: #fff;
-	padding-top: 25px;
-	padding-bottom: 25px;
-	box-shadow: inset 0px 8px 50px #333333;
-	min-height: 100vh;
-}
-
-#f3 .container {
-	padding-top: 30vh;
-	padding-bottom: 30vh;
-}
-
-#f3 h1 {
-	font-size: 3em;
-}
-
-.info {
-	background-color: #BD4932; /* #BD4932 */
-	color: #fff;
-}
-
-.info .container {
-	padding-bottom: 50px;
-}
-
-.info a {
-	color: #fff;
-}
-
-.footnote p {
-	font-size: 1em;
-}
+#footer {background-color: #BD4932; color: #fff;}

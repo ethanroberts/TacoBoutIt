@@ -4,47 +4,44 @@
 		<title>Lets Taco 'bout It | Home</title>
 
 		<!-- CSS -->
-			<!-- Bootstrap http://getbootstrap.com -->
-			<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-			<!-- My CSS -->
-			<link rel="stylesheet" type="text/css" href="stylesheet.css"/>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css">	<!-- Bootstrap http://getbootstrap.com -->
+		<link rel="stylesheet" type="text/css" href="stylesheet.css"/>	<!-- My CSS -->
 
 		<!-- Scripts -->
-			<!-- jQuery -->
-			<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>
-			<!-- jQuery animate number plugin http://aishek.github.io/jquery-animateNumber -->
-			<script src="js/jquery.animateNumber.min.js"></script>
-			<!-- jGestures http://jgestures.codeplex.com/releases/view/70830 -->
-			<script src="js/jgestures.js"></script>
-			<!-- Sense.js -->
-			<script src="js/sense.js"></script>
+		<script src="http://code.jquery.com/jquery-1.7.0.min.js"></script>	<!-- jQuery -->
+		<script src="js/jquery.animateNumber.min.js"></script>	<!-- jQuery animate number plugin -->
+		<script src="js/jgestures.js"></script>	<!-- jGestures http://jgestures.codeplex.com/releases/view/70830 -->
+		<script src="js/sense.js"></script>	<!-- Sense.js -->
 
+		<!-- Icon -->
+		<link rel="shortcut icon" href="src/img/icon.png">
 	</head>
 
 	<body>
 
 		<!-- Navbar -->
-		<div class="banner" id="bannerTop">
-			<audio id="music" preload="auto" tabindex="0" autoplay="true" loop="true">
-				<source src="src/audio/music.wav" type="audio/wav">
-			</audio>
+		<div id="navbar">
+			<div class="navContainer">
+				<!-- Music: El Ausente by Antonio Aguilar.  Retrieved from https://play.google.com/music/preview/T7wsneoobbcsdzowda44v6cdqji?utm_source=youtube&utm_medium=buylink -->
+				<audio id="music" preload="auto" tabindex="0" autoplay="true" loop="true">
+					<source src="src/audio/music.wav" type="audio/wav">
+				</audio>
 
-			<div class="container">
+				<!-- Nav Links -->
 				<ul class="pull-left">
-					<li><a href="#">Lets Taco 'bout It</a></li>
+					<li class="navLi"><a class="navA" href="#">Lets Taco 'bout It</a></li>
 				</ul>
-
 				<ul class="pull-right">
-					<li><a href="#">About</a></li>
-					<li><a href="#">Contact Us</a></li>
+					<li class="navLi"><a class="navA" href="#">About</a></li>
+					<li class="navLi"><a class="navA" href="#">Contact Us</a></li>
 				</ul>
-			</div>	<!-- /.container -->
-		</div>	<!-- /.banner -->
+			</div>	<!-- /.navContainer -->
+		</div>	<!-- /#navbar -->
 
 		<!-- Page Logo and Title -->
-		<div class="firstContent">
+		<div id="banner">
 			<div class="container">
-				<img src="src/img/tacoSticker.png" id="firstContentIcon">
+				<img src="src/img/tacoSticker.png" id="tacoImage">
 
 				<div class="row">
 					<div class="col-md-4"></div>
@@ -56,36 +53,35 @@
 				</div>
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown1.png" class="caretDown" id="cd1">
+				<img src="src/img/caretDown1.png" class="caret caretDown" id="cd1">
 			</div>	<!-- /.container -->
-		</div>	<!-- /.firstContent -->
+		</div>	<!-- /#banner -->
 
 		<!-- Introduction -->
-		<div class="introduction" id="intro">
+		<div id="intro" class="tile">
 			<div class="container">
-				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu1">
+				<!-- caret (for scrolling to previous div) -->
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu1">
 
 				<div class="row">
 					<div class="col-md-4">
-						<h1>Mexican Food</h1>						
+						<h1 class="tacoH1">Mexican Food</h1>						
 					</div>
 					<div class="col-md-4"></div>
 					<div class="col-md-4"></div>
-				</div>
+				</div>	<!-- /.row -->
 
 				<div class="row">
 					<div class="col-md-6">
 						<p>Mexican food has a pretty colourful history, Let's talk about it.</p>
 						<p>Tortillas were once canned. During the 1980s, many Americans could only find canned tortillas, a creation that can be attributed to El Paso's George N. Ashley. Ashley first sold the product in 1938 and had some success, but his creation can no longer be found on supermarket shelves today.</p>
-						<div class="footnote">
-							<p>Gustavo Arellano, Wall Street Journal 2012</p>
-						</div>
+
+						<h4 class="footnote">Gustavo Arellano, Wall Street Journal 2012</h4>
 					</div>
 					
 					<div class="col-md-6">
-						<div class="thumbnail">
-							<img src="src/img/mexicanDude1.png" id="mexicanDude" />  
+						<div class="thumbnail borderless">
+							<img src="src/img/mexicanDude1.png" id="mexicanDude">  
 						</div>
 					</div>
 
@@ -93,19 +89,18 @@
 						<!-- Retrieved from https://www.freesound.org/people/scuola_rocca_di_botte/sounds/17277/ -->
 					 	<source src="src/audio/maracas.wav" type="audio/wav">
 					</audio>
-				</div>
+				</div>	<!-- /.row -->
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown.png" class="caretDown" id="cd2">
+				<img src="src/img/caretDown.png" class="caret caretDown" id="cd2">
 			</div>	<!-- /.container -->
-		</div>	<!-- /.introduction -->
+		</div>	<!-- /#intro -->
 
 		<!-- Infographic Tortilla Counter -->
-		<div class="infoGraphic" id="graph1">
+		<div id="graph1" class="tile">
 			<div class="container">
-				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu2">
-
+				<!-- caret (for scrolling to previous div) -->
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu2">
 
 				<div class="row">
 					<div class="col-md-2"></div>
@@ -124,100 +119,80 @@
 				</div>
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown.png" class="caretDown" id="cd3">
+				<img src="src/img/caretDown.png" class="caret caretDown" id="cd3">
 			</div>	<!-- /.container -->		
-		</div> <!-- /.infoGraphic -->
+		</div> <!-- /#graph1 -->
 
 		<!-- Fact 1 -->
-		<div class="fact1" id="f1">
+		<div id="f1" class="tile">
 			<div class="container">
-				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu3">
-				<div class="logoDoritos">
-					<img src="src/img/doritos01.png" id="dLogo">
-				</div>
+				<!-- caret (for scrolling to previous div) -->
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu3">
+				<!-- Doritos Logo -->
+				<img src="src/img/doritos01.png" id="dLogo">
 
 				<div class="row">
 					<div class="col-md-12">
 						<p>Disneyland played a role in the invention of Doritos. In the early 1960s, Mexican workers at the theme park's restaurant fried leftover tortillas and added flavoring to help create the now-popular brand.</p>
-						<div class="footnote">
-							<p>Justin Chan, marcussamuelsson.com April 6, 2012</p>
-						</div>
+						<p class="footnote">Justin Chan, marcussamuelsson.com April 6, 2012</p>
 					</div>
 				</div>
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown.png" class="caretDown" id="cd4">
+				<img src="src/img/caretDown.png" class="caret caretDown" id="cd4">
 			</div>	<!-- /.container -->
-		</div>	<!-- /.Fact1 -->
+		</div>	<!-- /#f1 -->
 
-		<!-- RecipeSection -->
-		<div class="recipeSection" id="recipes">
+		<!-- Recipe Video Tile -->
+		<div id="recipeVid" class="tile">
 			<div class="container">
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu4">
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu4">
 
-				<div class="row" id="tacoVideoBox">
-					<div class="col-md-6" id="tacoVideo">
+				<div class="row">
+					<div class="col-md-6">
 						<iframe id="tVid" width="560" height="315" src="https://www.youtube.com/embed/3vQVLM7BUwQ" frameborder="0" allowfullscreen></iframe>
 					</div>
 					<div class="col-md-6" id="videoDescription">
 						</br>
-						<h1>Awesome Taco Recipe</h1>
+						<h1 class="tacoH1">Awesome Taco Recipe</h1>
 						<p>Learn how to make perfect tacos in under a minute.  Impress your friends with this classic mexican recipe.  They're simply the best, without any mess.</p>
 					</div>
 				</div>		
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown.png" class="caretDown" id="cd5">		
+				<img src="src/img/caretDown.png" class="caret caretDown" id="cd5">		
 			</div>	<!-- /.container -->
-		</div>	<!-- /.recipeSection -->	
+		</div>	<!-- /#recipeVid -->	
 
-		<div id="f2">
+		<div id="f2" class="tile">
 			<div class="container">
-				<!--  caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu5">
+				<!--  caret (for scrolling to previous div) -->
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu5">
 
 				<h1>Some Mexican foods contain meat from iguanas, spider monkeys and rattlesnakes</h1>
 				<p class="footnote">thefoodpickme.wordpress.com</p>
 
 				<!-- caret (for scrolling to next div) -->
-				<img src="src/img/caretDown.png" class="caretDown" id="cd6">
+				<img src="src/img/caretDown.png" class="caret caretDown" id="cd6">
 			</div>	<!-- /.container -->
-		</div>	<!-- /#f1 -->
+		</div>	<!-- /#f2 -->
 
-		<div id="f3">
+		<div id="f3" class="tile">
 			<div class="container">
 				<!--  caret (for scrolling to next div) -->
-				<img src="src/img/caretUp.png" class="caretUp" id="cu6">
+				<img src="src/img/caretUp.png" class="caret caretUp" id="cu6">
 
 				<h1>There's no such thing as a soft shell Taco... or is it the other way around?</h1>
 				<p class="footnote">Kah Chan 2015</p>
 			</div>	<!-- /.container -->
 		</div>	<!-- /#f3 -->
 
-		<!-- Joke Section (Too Racist)
-		<div class="jokes" id="jokes">
-			<div class="container">
-				 caret (for scrolling to next div) 
-				<img src="src/img/caretUp.png" class="caretUp" id="cu5">
-				
-				<div class="jokeBox">
-					<h1 id="question">Why do Mexicans make refried beans?</h1>
-					<p id="answer">Ever heard of a Mexican doing something right the first time?</p>
-				</div>
-			</div>	 /.container 
-		</div>	 /.jokes 
-		-->
-
 		<!-- Page Footer -->
-		<div class="info">
-			<div class="container">
-				
+		<div id="footer">
+			<div class="navContainer">	
 			</div>	<!-- /.container -->
-		</div>	<!-- /.info -->
-
-		</div>
+		</div>	<!-- /.footer -->
 
 		<!-- Main Javascript -->
 		<script src="main.js"></script>

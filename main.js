@@ -101,7 +101,7 @@ function scrollCD3 () {
 	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
 }
 function scrollCD4 () {
-	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
+	$("html, body").animate({ scrollTop: $('#recipeVid').offset().top }, 1000);
 }
 function scrollCD5 () {
 	$("html, body").animate({ scrollTop: $('#f2').offset().top }, 1000);
@@ -111,7 +111,7 @@ function scrollCD6 () {
 }
 	//Up
 function scrollCU1 () {
-	$("html, body").animate({ scrollTop: $('#bannerTop').offset().top }, 1000);
+	$("html, body").animate({ scrollTop: $('#navbar').offset().top }, 1000);
 	mAudio.play();
 }
 function scrollCU2 () {
@@ -125,7 +125,7 @@ function scrollCU4 () {
 	$("html, body").animate({ scrollTop: $('#f1').offset().top }, 1000);
 }
 function scrollCU5 () {
-	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
+	$("html, body").animate({ scrollTop: $('#recipeVid').offset().top }, 1000);
 }
 function scrollCU6 () {
 	$("html, body").animate({ scrollTop: $('#f2').offset().top }, 1000);
@@ -155,17 +155,6 @@ function animTortillas () {
 window.onload = function () {
 	setupEventHandles();
 	startCount();
-
-	//Play music
-	//var music = document.getElementById("music");
-	//music.play();
-
-	//var mAudio = document.getElementById("maracaAudio");
-		//mAudio.play();
-
-	//Phone Shake
-	//$("#intro").shake();
-	//jQuery(window).bind('shake', phoneShake);
 }
 
 
