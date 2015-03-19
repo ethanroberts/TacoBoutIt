@@ -149,8 +149,8 @@ window.onload = function () {
 	startCount();
 
 	//Play music
-	var music = document.getElementById("music");
-	music.play();
+	//var music = document.getElementById("music");
+	//music.play();
 
 	//var mAudio = document.getElementById("maracaAudio");
 		//mAudio.play();
