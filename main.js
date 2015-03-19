@@ -12,6 +12,7 @@
 
 	//Audio
 	var mAudio = document.getElementById("maracaAudio");
+	var music = document.getElementById("music");
 
 	//Dorito Animation
 	var doritoLogo = document.getElementById("dLogo");
@@ -146,6 +147,9 @@ function animTortillas () {
 window.onload = function () {
 	setupEventHandles();
 	startCount();
+
+	//Play music
+	music.play();
 
 	//var mAudio = document.getElementById("maracaAudio");
 		//mAudio.play();
