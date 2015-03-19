@@ -12,7 +12,7 @@
 
 	//Audio
 	var mAudio = document.getElementById("maracaAudio");
-	var music = document.getElementById("music");
+	
 
 	//Dorito Animation
 	var doritoLogo = document.getElementById("dLogo");
@@ -149,6 +149,7 @@ window.onload = function () {
 	startCount();
 
 	//Play music
+	var music = document.getElementById("music");
 	music.play();
 
 	//var mAudio = document.getElementById("maracaAudio");
