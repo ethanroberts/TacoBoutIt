@@ -244,10 +244,6 @@ p {
 	margin: auto;
 }
 
-.footnote p {
-	font-size: 1em;
-}
-
 .logoDoritos {
 	text-align: center;
 	display: block;
@@ -258,6 +254,42 @@ p {
 	height: 402px;
 }
 
+#f2 {
+	background-color: #BD4932; /* #BD4932 */
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 8px 50px #333333;
+	min-height: 100vh;
+}
+
+#f2 .container {
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+}
+
+#f2 h1 {
+	font-size: 3em;
+}
+
+#f3 {
+	background-color: #105B63; /* #105B63 */
+	color: #fff;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	box-shadow: inset 0px 8px 50px #333333;
+	min-height: 100vh;
+}
+
+#f3 .container {
+	padding-top: 30vh;
+	padding-bottom: 30vh;
+}
+
+#f3 h1 {
+	font-size: 3em;
+}
+
 .info {
 	background-color: #b0cd00;
 	color: #fff;
@@ -265,4 +297,8 @@ p {
 
 .info a {
 	color: #fff;
+}
+
+.footnote p {
+	font-size: 1em;
 }

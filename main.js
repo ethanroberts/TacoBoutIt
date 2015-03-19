@@ -38,12 +38,14 @@ function setupEventHandles () {
 	document.getElementById("cd3").addEventListener("click", scrollCD3);
 	document.getElementById("cd4").addEventListener("click", scrollCD4);
 	document.getElementById("cd5").addEventListener("click", scrollCD5);
+	document.getElementById("cd6").addEventListener("click", scrollCD6);
 	//Up
 	document.getElementById("cu1").addEventListener("click", scrollCU1);
 	document.getElementById("cu2").addEventListener("click", scrollCU2);
 	document.getElementById("cu3").addEventListener("click", scrollCU3);
 	document.getElementById("cu4").addEventListener("click", scrollCU4);
-	//document.getElementById("cu5").addEventListener("click", scrollCU5);
+	document.getElementById("cu5").addEventListener("click", scrollCU5);
+	document.getElementById("cu6").addEventListener("click", scrollCU6);
 
 	//on Window Scroll
 	$(window).scroll(animateMexicanDude);
@@ -102,7 +104,10 @@ function scrollCD4 () {
 	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
 }
 function scrollCD5 () {
-	$("html, body").animate({ scrollTop: $('#jokes').offset().top }, 1000);
+	$("html, body").animate({ scrollTop: $('#f2').offset().top }, 1000);
+}
+function scrollCD6 () {
+	$("html, body").animate({ scrollTop: $('#f3').offset().top }, 1000);
 }
 	//Up
 function scrollCU1 () {
@@ -121,6 +126,9 @@ function scrollCU4 () {
 }
 function scrollCU5 () {
 	$("html, body").animate({ scrollTop: $('#recipes').offset().top }, 1000);
+}
+function scrollCU6 () {
+	$("html, body").animate({ scrollTop: $('#f2').offset().top }, 1000);
 }
 
 
